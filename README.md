@@ -1,28 +1,14 @@
-# Garage OS v2.1
+# Garage OS v2.4
 
-Static GitHub Pages-ready garage showroom + maintenance console.
+Cinematic showroom iteration inspired by racing-game vehicle selection screens.
 
-## New in v2.1
+## What changed
+- Full-width showroom stage with a bottom horizontal vehicle carousel.
+- Bike/Car mode switch in the selector rail.
+- "Coming Soon" state for vehicles that do not yet have a dedicated curated archive.
+- Dedicated archives currently enabled for Avenger 220 Cruise, Bullet 500, Yamaha R15 and WagonR.
+- Existing WhatsApp Import Lab and Garage Ledger retained.
+- GitHub Pages compatible: upload `index.html` and the complete `assets/` folder to the repository root.
 
-- WhatsApp chat export ingestion (`.txt`, export without media)
-- Local in-browser parsing; chat content is not uploaded by the site
-- Heuristic detection of:
-  - rides / trips
-  - fuel / CNG / diesel / petrol entries
-  - service activity
-  - repair / issue notes
-  - compliance notes such as PUC / insurance
-  - care / cleaning notes
-- Vehicle auto-detection for known garage vehicles
-- Optional sender filter and default vehicle mapping
-- Preview before applying
-- Local browser journal storage using `localStorage`
-- CSV export for later import into Google Sheets / the master ledger
-
-## Important limitation
-
-Because GitHub Pages is a static host, the page cannot securely write directly into a private Google Sheet by itself. v2.1 therefore parses locally and exports structured CSV. A later version can add a small authenticated Google Apps Script endpoint so approved imports can update the live sheet with one click.
-
-## Deploy
-
-Upload `index.html` and the `assets/` folder to the GitHub Pages repository root, commit, and push.
+## Next media pass
+Replace the Coming Soon state as dedicated archives arrive for Interceptor 650, Vitpilen 250, Xpulse 4V Pro, RX135, Alcazar and Creta.
